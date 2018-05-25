@@ -39,6 +39,10 @@ namespace SocialNetwork
                 {
                     await DisplayAlert("Ubicación", $"Latitude: {location.Latitude}, Longitude: {location.Longitude}", "OK");
                     System.Diagnostics.Debug.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}");
+
+                    var map = new Mapa();
+                    await Navigation.PushAsync(map);
+                    map.SetMapPosition(location);
                 }
             }
             catch (FeatureNotSupportedException fnsEx)

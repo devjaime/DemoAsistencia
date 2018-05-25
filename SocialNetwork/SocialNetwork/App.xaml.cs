@@ -13,7 +13,7 @@ namespace SocialNetwork
         {
             InitializeComponent();
 
-            MainPage = new SocialNetwork.MainPage();
+            MainPage = new NavigationPage(new SocialNetwork.MainPage());
         }
 
         protected override void OnStart()
