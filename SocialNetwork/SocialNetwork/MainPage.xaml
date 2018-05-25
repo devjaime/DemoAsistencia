@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="SocialNetwork.MainPage" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SocialNetwork" BackgroundColor="{StaticResource BackgroundColor}">
+<ContentPage 
+    x:Class="SocialNetwork.MainPage" 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:SocialNetwork" 
+    BackgroundColor="{StaticResource BackgroundColor}">
 
     <ScrollView>
         <Grid ColumnSpacing="0" RowSpacing="0">
@@ -46,7 +51,7 @@
                 <Label Margin="20,0" Grid.Row="3" Style="{StaticResource MainBodyLabel}" Text="Presione el boton asistencia para envíar su posición georeferencial" />
 
             <!--  follow button  -->
-            <Button Grid.Row="4" Margin="20" Style="{StaticResource FollowButton}" Text="Asistencia" />
+            <Button Grid.Row="4" Margin="20" Style="{StaticResource FollowButton}" Text="Asistencia" Clicked="btnLocalizacion_Clicked" />
 
         </Grid>
     </ScrollView>
